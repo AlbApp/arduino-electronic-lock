@@ -1,10 +1,12 @@
 /**
  * Электронный замок по карточкам
  * 
+ * settings.h
+ * 
  * @author: Ахрамеев Денис
  * @link: http://den.bz
  */
-#include "pitches.h"
+#include "notes.h"
 
 #define RFID_RX_PIN 2 // RFID пины
 #define RFID_TX_PIN 3 // RFID пины
@@ -66,7 +68,3 @@ RFIDTag tag;
 // Сервопривод
 Servo servo;
 
-// Текущее положение
-bool isClosed = true;
-
-int degree;
