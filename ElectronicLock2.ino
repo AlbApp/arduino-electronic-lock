@@ -93,7 +93,8 @@ void Player::playNotes(Note* notes, int count) {
  * @return bool
  */
 bool Controller::isAllowedCard(long id) {
-    for (unsigned int i = 0; i < sizeof(allowedIds)/sizeof(long); ++i) {
+    int count = sizeof(allowedIds)/sizeof(long);
+    for (int i = 0; i < count; ++i) {
         if (allowedIds[i] == id) {
             return true;
         }
