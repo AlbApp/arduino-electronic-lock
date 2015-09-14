@@ -84,14 +84,12 @@ bool isAllowedId(long id)
  */
 bool lockWork()
 {
-    if(RFID.isIdAvailable()) {
+    if (RFID.isIdAvailable()) {
         tag = RFID.readId();
         Serial.print("ID:       ");
         Serial.println(tag.id);
 
         // Ищем идентификатор в базе
-        bool found = false;
-        
         if (!isAllowedId(tag.id)) {
             playNotes(wrongCardMelody, sizeof(wrongCardMelody)/sizeof(Note));
             Serial.println("WARNING: Wrong card!");
