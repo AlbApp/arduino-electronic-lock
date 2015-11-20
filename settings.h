@@ -3,8 +3,8 @@
  * 
  * settings.h
  * 
- * @author: Ахрамеев Денис
- * @link: http://den.bz
+ * @author: Ахрамеев Денис Викторович
+ * @link: http://ahrameev.ru/project/arduino-lock.html
  */
 #include "notes.h"
 
